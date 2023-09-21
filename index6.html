@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Styling</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Nav bar styling */
+    .nav-bar{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background: #4c6ca0;
+      border-radius: 5px;
+      overflow: auto;
+    }
+
+    .nav-bar li{
+      float: left;
+    }
+
+    .nav-bar li a{
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      padding: 15px 20px;
+    }
+
+    .nav-bar li a:hover{
+      background-color: #446190;
+      color: #f4f4f4;
+    }
+
+    /* Side Menu */
+    .side-menu{
+      list-style: none;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+    }
+
+    .side-menu li{
+      font-size: 18px;
+      line-height: 3em;
+      border-bottom: 1px dotted #ddd;
+    }
+
+    .side-menu li:last-child{
+      border: none
+    }
+
+    .side-menu li a{
+      color:#333;
+      text-decoration: none;
+    }
+
+    .side-menu li a:hover{
+      color: coral;
+    }
+
+    .inline-block li{
+      display: inline;
+    }
+
+    li a{
+      padding-right: 20px;
+    }
+
+    /* to center an image  */
+    img{
+      display: block;
+      margin: auto;
+    }
+
+    .box{
+      width: 31.5%;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 10px;
+      display: inline-block;
+      box-sizing: border-box;
+    }
+
+  </style>
+</head>
+<body>
+  <ul class="nav-bar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <br>
+  <ul class="side-menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <br>
+  <ul class="inline-block">
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+  <div class="box">
+    <h3>Heading One</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eos nihil minus? Dolorem ipsa neque at eaque voluptate iste amet.</p>
+  </div>
+  <div class="box">
+    <h3>Heading One</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eos nihil minus? Dolorem ipsa neque at eaque voluptate iste amet.</p>
+  </div>
+  <div class="box">
+    <h3>Heading One</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eos nihil minus? Dolorem ipsa neque at eaque voluptate iste amet.</p>
+  </div>
+</body>
+</html>

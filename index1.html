@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Implementing CSS</title>
+  <style>
+    /* Element Selector */
+    body{
+      background-color: gray;
+    }
+    /* . is for classess */
+    .primary-heading{
+      color: blue;
+    }
+    /* # is used for ids */
+    #welcome{
+      background-color: aliceblue;
+    }
+    /* Multiple selector */
+    #welcome, #about{
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+    /* Nested Selectors */
+    #about p{
+      color:#ccc;
+    }
+  </style>
+  <!-- <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6em;
+      font-size: 18px;
+    }
+    #welcome p span{
+      font-weight: bold;
+    }
+    #about p span{
+      font-style: italic;
+    }
+
+  </style> -->
+</head>
+<body>
+  <div id="welcome">
+    <h2 class="primary-heading">Welcome</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque <span>vitae autem aperiam minima, sint exercitationem officia ab praesentium</span> modi earum?</p>
+  </div>
+  <div id="about">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magni ex odit! <span>Similique minima ullam est ex quod et aspernatur!</span></p>
+  </div>
+</body>
+</html>

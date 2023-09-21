@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyframes</title>
+  <style>
+    body{
+      background: #333;
+      /* display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; */
+    }
+
+    .box3{
+      background: white;
+      width: 100px;
+      height: 100px;
+      /* transition-property: background;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 3s; */
+      transition: all 2s ease-in-out
+    }
+    /*
+    TRANSITIONAL PROPERTIES
+    -Properties that have an identifiable halfway point
+
+    background-color
+    background-position
+    border-color
+    border-width
+    border-spacing
+    bottom
+    color
+    font-size
+    font-weight
+    height left
+    letter spacing
+    line-height
+    margin
+    max-height
+    max-width
+    opacity
+    outline-color
+    outline-offset
+    outline-width
+    padding right
+    text-indent
+    text-shadow
+    top
+    vertical-align
+    visibility
+    width
+    word-spacing
+    z-index
+    */
+
+    .box3:hover{
+      background: red;
+      border-radius: 50%;
+      height: 300px;
+      width: 300px;
+    }
+
+    .box{
+      background: white;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      /* animation-name: animate1;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 2s;
+      animation-direction:alternate;
+      animation-timing-function: ease-in-out; */
+      animation: animate1 5s forwards 1s ease-in-out;
+    }
+
+    @keyframes animate1{
+      from{
+        top: 0;
+      }
+
+      to {
+        width: 600px;
+        background-color: red;
+        top: 300px;
+      }
+    }
+
+    .box2{
+      background: white;
+      width: 200px;
+      height: 200px;
+      position: relative;
+      top: 0;
+      left: 0;
+      animation: animate2 5s forwards ease-in-out
+    }
+
+    @keyframes animate2{
+      25% {
+        top: 0;
+        left: 300px;
+        background-color: red;
+        border-radius: 50% 0 0 0;
+      }
+      50%{
+        top: 300px;
+        left: 300px;
+        background-color: green;
+        border-radius: 50% 50% 0 0;
+      }
+      75%{
+        top: 300px;
+        left: 0;
+        background:blue;      
+        border-radius: 50% 50% 50% 0;
+      }
+      100%{
+        top:0;
+        left:0;
+        background-color: white;
+        border-radius: 50% 50% 50% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- <div class="box"></div> -->
+  <!-- <div class="box2"></div> -->
+  <!-- <div class="box3"></div> -->
+</body>
+</html>

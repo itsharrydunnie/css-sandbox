@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Template Areas</title>
+  <style>
+    .container{
+      display: grid;
+      grid-template-areas: 
+      "header header header"
+      "content content sidebar"
+      "box1 box2 box2"
+      "box3 box3 box3"
+      "footer footer footer";
+      grid-gap: 1rem;
+    }
+
+    .header{
+      grid-area: header;
+      text-align: center;
+    }
+
+    .content{
+      grid-area: content;
+    }
+
+    .sidebar{
+      grid-area: sidebar;
+    }
+
+    .box1{grid-area: box1}
+    .box2{grid-area: box2}
+    .box3{grid-area: box3}
+
+    .footer{
+      grid-area: footer;
+      text-align: center;
+    }
+
+    .header,
+    .content,
+    .sidebar,
+    .box1,
+    .box2,
+    .box3,
+    .footer{
+      border: 1px #ccc solid;
+      padding: 0.5rem;
+    }
+
+    @media(max-width: 500px) {
+      .container{
+      display: grid;
+      grid-template-areas: 
+      "header"
+      "content"
+      "sidebar"
+      "box1"
+      "box2"
+      "box3"
+      "footer";
+      grid-gap: 1rem;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>My Website</h1>
+    </header>
+    <section class="content">
+      <h3>Welcome to my site</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit commodi accusamus earum eveniet reiciendis inventore numquam, maiores, magni porro dolor et molestiae doloribus quo quasi voluptas officia sapiente nulla. Maiores autem quos dolore eius sit consequuntur. Repudiandae dolorum provident sint quidem atque error! Suscipit velit eum corrupti iusto eveniet nemo.</p>
+    </section>
+    <aside class="sidebar">
+      <h3>Contact Us</h3>
+      <ul>
+        <li>Phone Number</li>
+        <li>Office Address</li>
+        <li>Email</li>
+        <li>support page</li>
+      </ul>
+    </aside>
+    <div class="box1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In praesentium et culpa illum tempore ipsa molestias dolor porro, nisi harum excepturi. Pariatur incidunt dolore adipisci quam numquam nam et accusantium dolores animi perspiciatis magni voluptas excepturi, alias accusamus suscipit vitae. Aspernatur, molestiae asperiores!</p>
+    </div>
+    <div class="box2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In   praesentium et culpa illum tempore ipsa molestias dolor
+        porro, nisi harum excepturi. Pariatur incidunt dolore adipisci quam numquam nam et accusantium dolores animi
+        perspiciatis magni voluptas excepturi, alias accusamus suscipit vitae. Aspernatur, molestiae asperiores!
+      </p>
+    </div>
+    <div class="box3">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In praesentium et culpa illum tempore ipsa molestias dolor
+        porro, nisi harum excepturi. Pariatur incidunt dolore adipisci quam numquam nam et accusantium dolores animi
+        perspiciatis magni voluptas excepturi, alias accusamus suscipit vitae. Aspernatur, molestiae asperiores!</p>
+    </div>
+    <footer class="footer"><p>Copyright &copy; 2023</p></footer>
+  </div>
+</body>
+</html>
